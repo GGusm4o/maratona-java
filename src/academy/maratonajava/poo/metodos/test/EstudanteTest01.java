@@ -28,6 +28,11 @@ public class EstudanteTest01 {
         System.out.println(estudante02.gender);
 
         impressora.imprime(estudante01);
+
+        impressora.imprime(estudante02);
+
+        System.out.println("###################################");
+        impressora.imprime(estudante01);
         impressora.imprime(estudante02);
     }
 }
