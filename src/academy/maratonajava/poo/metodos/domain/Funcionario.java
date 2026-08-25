@@ -12,7 +12,7 @@ public class Funcionario {
         if (this.salaries == null) {
             return;
         }
-            for (double salary : this.salaries) {
+            for (double salary : salaries) {
                 System.out.print(salary + " ");
             }
             imprimeMediaSalario();
@@ -23,7 +23,7 @@ public class Funcionario {
             return;
         }
         double average = 0;
-            for (double salary : this.salaries) {
+            for (double salary : salaries) {
                 average += salary;
             }
             average /= salaries.length;
