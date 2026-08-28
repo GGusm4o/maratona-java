@@ -1,4 +1,4 @@
-package academy.maratonajava.poo.Sobrecargametodos.domain;
+package academy.maratonajava.poo.sobrecargametodos.domain;
 
 public class Anime {
     private String name;

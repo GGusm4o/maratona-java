@@ -1,6 +1,6 @@
-package academy.maratonajava.poo.Sobrecargametodos.test;
+package academy.maratonajava.poo.sobrecargametodos.test;
 
-import academy.maratonajava.poo.Sobrecargametodos.domain.Anime;
+import academy.maratonajava.poo.sobrecargametodos.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

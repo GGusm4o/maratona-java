@@ -1,4 +1,4 @@
-package academy.maratonajava.poo.Construtores.domain;
+package academy.maratonajava.poo.construtores.domain;
 
 public class Anime {
     private String name;
