@@ -3,7 +3,7 @@ package academy.maratonajava.poo.modificadoresestaticos.domain;
 public class Carro {
     private String name;
     private double valocidadeMaxima;
-    public static double valocidadeLimite = 250;
+    private static double valocidadeLimite = 250;
 
     public Carro(String name, double valocidadeMaxima) {
         this.name = name;
@@ -15,6 +15,14 @@ public class Carro {
         System.out.println("Nome: " + this.name);
         System.out.println("Velocidade Máxima: " + this.valocidadeMaxima);
         System.out.println("Velocidade Limite: " + Carro.valocidadeLimite);
+    }
+
+    public static void setValocidadeLimite(double valocidadeLimite) {
+        Carro.valocidadeLimite = valocidadeLimite;
+    }
+
+    public static double getValocidadeLimite() {
+        return Carro.valocidadeLimite;
     }
 
     public String getName() {
