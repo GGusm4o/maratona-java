@@ -8,7 +8,7 @@ public class JogadorTest02 {
         Jogador jogador1 = new Jogador("Pelé");
         Time time = new Time("Seleção Brasileira");
         jogador1.setTeam(time);
-        jogador1.imprimir();
+        jogador1.imprime();
 
     }
 }
