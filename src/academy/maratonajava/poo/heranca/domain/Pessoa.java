@@ -1,9 +1,9 @@
 package academy.maratonajava.poo.heranca.domain;
 
 public class Pessoa {
-    private String name;
-    private String cpf;
-    private Endereco address;
+    protected String name;
+    protected String cpf;
+    protected Endereco address;
 
     public void imprimir() {
         System.out.println("Nome: " + this.name);
