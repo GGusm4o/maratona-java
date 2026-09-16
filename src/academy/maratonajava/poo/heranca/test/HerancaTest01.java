@@ -6,7 +6,6 @@ import academy.maratonajava.poo.heranca.domain.Pessoa;
 
 public class HerancaTest01 {
     public static void main(String[] args) {
-        System.out.println("--- Cliente ---");
         Endereco endereco = new Endereco();
         endereco.setStreet("Rua J");
         endereco.setZipCode("12345");
@@ -18,7 +17,6 @@ public class HerancaTest01 {
 
         System.out.println();
 
-        System.out.println("--- Funcionario ---");
         Funcionario funcionario = new Funcionario();
         funcionario.setName("Joao");
         funcionario.setCpf("1234567890");
