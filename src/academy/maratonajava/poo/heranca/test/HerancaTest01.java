@@ -9,16 +9,15 @@ public class HerancaTest01 {
         Endereco endereco = new Endereco();
         endereco.setStreet("Rua J");
         endereco.setZipCode("12345");
-        Pessoa pessoa = new Pessoa();
-        pessoa.setName("GG");
+
+        Pessoa pessoa = new Pessoa("GG");
         pessoa.setCpf("1234567890");
         pessoa.setAddress(endereco);
         pessoa.imprimir();
 
         System.out.println();
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setName("Joao");
+        Funcionario funcionario = new Funcionario("João");
         funcionario.setCpf("1234567890");
         funcionario.setAddress(endereco);
         funcionario.setSalary(10000);

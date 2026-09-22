@@ -3,6 +3,10 @@ package academy.maratonajava.poo.heranca.domain;
 public class Funcionario extends Pessoa {
     private double salary;
 
+    public Funcionario(String name) {
+        super(name);
+    }
+
     public void imprimir() {
         super.imprimir();
         System.out.println("Salário: "+this.salary);

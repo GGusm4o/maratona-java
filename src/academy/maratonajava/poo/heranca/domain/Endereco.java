@@ -4,11 +4,6 @@ public class Endereco {
     private String street;
     private String zipCode;
 
-    public void imprime() {
-        Pessoa p = new Pessoa();
-        p.name = "sasa";
-    }
-
     public String getStreet() {
         return street;
     }
