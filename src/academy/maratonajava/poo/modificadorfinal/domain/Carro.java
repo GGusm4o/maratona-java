@@ -2,7 +2,8 @@ package academy.maratonajava.poo.modificadorfinal.domain;
 
 public class Carro {
     private String name;
-    public static final double VELOCIDADE_LIMITE;
+    public static final double VELOCIDADE_LIMITE = 250;
+    public final Comprador COMPRADOR = new Comprador();
 
     public String getName() {
         return name;
