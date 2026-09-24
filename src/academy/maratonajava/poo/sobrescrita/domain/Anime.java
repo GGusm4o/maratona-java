@@ -1,6 +1,6 @@
 package academy.maratonajava.poo.sobrescrita.domain;
 
-public class Anime extends Object {
+public class Anime {
     private String name;
 
     public Anime(String name) {
