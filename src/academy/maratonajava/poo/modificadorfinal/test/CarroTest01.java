@@ -2,6 +2,7 @@ package academy.maratonajava.poo.modificadorfinal.test;
 
 import academy.maratonajava.poo.modificadorfinal.domain.Carro;
 import academy.maratonajava.poo.modificadorfinal.domain.Comprador;
+import academy.maratonajava.poo.modificadorfinal.domain.Ferrari;
 
 public class CarroTest01 {
     public static void main(String[] args) {
@@ -13,5 +14,8 @@ public class CarroTest01 {
         carro.COMPRADOR.setName("GG");
         System.out.println(carro.COMPRADOR);
 
+        Ferrari ferrari = new Ferrari();
+        ferrari.setName("Enzo");
+        ferrari.imprime();
     }
 }
