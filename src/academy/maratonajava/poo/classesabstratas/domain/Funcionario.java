@@ -7,6 +7,16 @@ public abstract class Funcionario {
     public Funcionario(String name, double salary) {
         this.name = name;
         this.salary = salary;
+        calcularBonus();
     }
 
+    public abstract void calcularBonus();
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
