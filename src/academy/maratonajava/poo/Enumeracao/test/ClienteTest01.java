@@ -2,7 +2,7 @@ package academy.maratonajava.poo.Enumeracao.test;
 
 import academy.maratonajava.poo.Enumeracao.domain.Cliente;
 import academy.maratonajava.poo.Enumeracao.domain.TipoCliente;
-import academy.maratonajava.poo.Enumeracao.domain.Cliente.TipoPagamento;
+import academy.maratonajava.poo.Enumeracao.domain.TipoPagamento;
 
 public class ClienteTest01 {
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class ClienteTest01 {
 
         System.out.println(cliente1);
         System.out.println(cliente2);
+        System.out.println(TipoPagamento.CREDITO.calcularDesconto(100) + " %");
 
     }
 }
