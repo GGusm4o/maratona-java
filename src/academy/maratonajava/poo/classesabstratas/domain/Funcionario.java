@@ -1,6 +1,6 @@
 package academy.maratonajava.poo.classesabstratas.domain;
 
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa {
     protected String name;
     protected double salary;
 
@@ -11,12 +11,4 @@ public abstract class Funcionario {
     }
 
     public abstract void calcularBonus();
-
-    @Override
-    public String toString() {
-        return "Funcionario{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                '}';
-    }
 }

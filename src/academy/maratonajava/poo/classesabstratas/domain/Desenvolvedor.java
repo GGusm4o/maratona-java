@@ -11,10 +11,16 @@ public class Desenvolvedor extends Funcionario {
     }
 
     @Override
+    public void imprime() {
+        System.out.println("Desenvolvedor");
+    }
+
+    @Override
     public String toString() {
         return "Desenvolvedor{" +
                 "name='" + name + '\'' +
                 ", salary=" + salary +
                 '}';
     }
+
 }
