@@ -1,5 +1,6 @@
 package academy.maratonajava.poo.interfaces.test;
 
+import academy.maratonajava.poo.interfaces.domain.DataLoader;
 import academy.maratonajava.poo.interfaces.domain.DatabaseLoader;
 import academy.maratonajava.poo.interfaces.domain.FileLoader;
 
@@ -15,5 +16,8 @@ public class DataLoaderTest01 {
 
         databaseLoader.checkPermission();
         fileLoader.checkPermission();
+
+        DataLoader.retrieveMaxDataSize();
+        DatabaseLoader.retrieveMaxDataSize();
     }
 }
