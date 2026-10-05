@@ -8,11 +8,9 @@ Centralizar exemplos práticos e exercícios desenvolvidos durante os estudos de
 
 ## Tecnologias utilizadas
 
-- Java
+- Java 8
 - IntelliJ IDEA
 - Git e GitHub
-
-> Versão do Java: _a preencher_.
 
 ## Estrutura dos estudos
 
@@ -20,17 +18,27 @@ Centralizar exemplos práticos e exercícios desenvolvidos durante os estudos de
 src/
 ├── HelloWorld.java
 └── academy/maratonajava/
-    ├── introducao/
+    ├── introducao/                  # fundamentos da linguagem
     └── poo/
-        ├── introducaoaclasses/
-        │   ├── domain/
-        │   └── test/
-        └── metodos/
-            ├── domain/
-            └── test/
+        ├── introducaoaclasses/      # domain/ e test/
+        ├── metodos/                 # domain/ e test/
+        ├── sobrecargametodos/       # domain/ e test/
+        ├── construtores/            # domain/ e test/
+        ├── blocosinicializacao/     # domain/ e test/
+        ├── modificadoresestaticos/  # domain/ e test/
+        ├── modificadorfinal/        # domain/ e test/
+        ├── associacao/              # domain/ e test/
+        ├── heranca/                 # domain/ e test/
+        ├── sobrescrita/             # domain/ e test/
+        ├── classesabstratas/        # domain/ e test/
+        ├── interfaces/              # domain/ e test/
+        ├── Enumeracao/              # domain/ e test/
+        └── polimorfismo/            # domain/, repositorio/, servico/ e test/
 ```
 
 ## Assuntos já estudados
+
+### Fundamentos
 
 - Tipos primitivos e casting
 - Operadores
@@ -38,22 +46,36 @@ src/
 - Estruturas de repetição
 - Arrays e arrays multidimensionais
 - Exercícios de tipos primitivos
-- Introdução à programação orientada a objetos
-- Classes de domínio: `Carro`, `Estudante`, `Professor` e `Calculadora`
-- Métodos e classes de teste associadas
+
+### Programação Orientada a Objetos
+
+- Introdução a classes e objetos
+- Métodos
+- Sobrecarga de métodos
+- Construtores
+- Blocos de inicialização
+- Modificadores estáticos (`static`)
+- Modificador `final`
+- Associação entre classes
+- Herança
+- Sobrescrita de métodos
+- Classes abstratas
+- Interfaces
+- Enumerações
+- Polimorfismo (parâmetros polimórficos, `instanceof` e programação orientada a interface)
 
 ## Como executar
 
 1. Clone o repositório.
 2. Abra o projeto no IntelliJ IDEA.
-3. Configure um JDK compatível, caso necessário.
+3. Configure um JDK 8, caso necessário.
 4. Execute uma das classes que possuem o método `main`, como `Arrays01`, `CarroTest01` ou `CalculadoraTest03`.
 
 ## Organização dos pacotes
 
 - `academy.maratonajava.introducao`: exemplos dos fundamentos da linguagem.
-- `academy.maratonajava.poo.introducaoaclasses`: classes de domínio e testes da introdução a classes.
-- `academy.maratonajava.poo.metodos`: exemplos de métodos, incluindo `Calculadora` e suas classes de teste.
+- `academy.maratonajava.poo.*`: um pacote por assunto de orientação a objetos. Em geral, `domain` contém as classes do assunto e `test` contém as classes com `main` que as exercitam.
+- `academy.maratonajava.poo.polimorfismo`: além de `domain` e `test`, possui `repositorio` (interface) e `servico` (implementações e regras de negócio).
 
 ## Progresso dos estudos
 
@@ -61,8 +83,15 @@ src/
 - [x] Estruturas condicionais e de repetição
 - [x] Arrays e arrays multidimensionais
 - [x] Introdução a classes e objetos
-- [x] Métodos
-- [ ] Próximos tópicos: _a preencher_
+- [x] Métodos e sobrecarga
+- [x] Construtores e blocos de inicialização
+- [x] Modificadores `static` e `final`
+- [x] Associação
+- [x] Herança e sobrescrita
+- [x] Classes abstratas e interfaces
+- [x] Enumerações
+- [x] Polimorfismo
+- [ ] Exceções (em andamento)
 
 ## Observação
 
