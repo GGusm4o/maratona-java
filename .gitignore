@@ -1,6 +1,10 @@
 # Compiled class files
 *.class
 
+# File
+*.txt
+*arquivo/
+
 # IntelliJ IDEA
 .idea/
 *.iml
