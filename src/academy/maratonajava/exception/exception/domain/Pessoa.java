@@ -1,6 +1,5 @@
 package academy.maratonajava.exception.exception.domain;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Pessoa {
