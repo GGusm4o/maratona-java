@@ -73,7 +73,7 @@ src/
 
 ## Organização dos pacotes
 
-- `academy.maratonajava.introducao`: exemplos dos fundamentos da linguagem.
+- `fundamentos`: exemplos dos fundamentos da linguagem.
 - `academy.maratonajava.poo.*`: um pacote por assunto de orientação a objetos. Em geral, `domain` contém as classes do assunto e `test` contém as classes com `main` que as exercitam.
 - `academy.maratonajava.poo.polimorfismo`: além de `domain` e `test`, possui `repositorio` (interface) e `servico` (implementações e regras de negócio).
 
