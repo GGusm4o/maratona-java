@@ -1,98 +1,145 @@
-# Maratona Java
+# ☕ Maratona Java
 
-Repositório de estudos e exercícios em Java, acompanhando minha evolução na linguagem e em Programação Orientada a Objetos.
+![Java](https://img.shields.io/badge/Java-8-orange?logo=openjdk&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-000000?logo=intellijidea&logoColor=white)
+![Status](https://img.shields.io/badge/status-em_andamento-yellow)
 
-## Objetivo
+Repositório de estudos de **Java**: fundamentos da linguagem, Programação Orientada a Objetos (POO), tratamento de exceções e classes utilitárias. Cada assunto tem o seu próprio pacote, com exemplos executáveis (`main`) e, quando necessário, classes de domínio de apoio.
 
-Centralizar exemplos práticos e exercícios desenvolvidos durante os estudos de Java, mantendo uma evolução organizada por assuntos e pacotes.
+## Sumário
 
-## Tecnologias utilizadas
+- [Visão geral](#visão-geral)
+- [Trilha de estudos](#trilha-de-estudos)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Convenções](#convenções)
+- [Como executar](#como-executar)
+- [Progresso](#progresso)
 
-- Java 8
-- IntelliJ IDEA
-- Git e GitHub
+## Visão geral
 
-## Estrutura dos estudos
+| Item | Detalhe |
+| --- | --- |
+| Linguagem | Java 8 |
+| IDE | IntelliJ IDEA |
+| Build | Sem ferramenta de build: projeto simples em `src/` |
+| Código-fonte | 121 arquivos `.java` |
+| Pacote raiz | `academy.maratonajava` |
+
+## Trilha de estudos
+
+### 1. Fundamentos — `fundamentos`
+
+| Pacote | Assunto |
+| --- | --- |
+| `tiposprimitivos` | Tipos primitivos, casting e exercícios |
+| `operadores` | Operadores |
+| `estruturascondicionais` | `if`, `else`, `switch` e variações (6 exemplos) |
+| `estruturasrepeticao` | Laços de repetição (5 exemplos) |
+| `arrays` | Arrays e arrays multidimensionais |
+
+### 2. Programação Orientada a Objetos — `poo`
+
+| Pacote | Assunto |
+| --- | --- |
+| `introducaoaclasses` | Classes e objetos |
+| `metodos` | Métodos |
+| `sobrecargametodos` | Sobrecarga de métodos |
+| `construtores` | Construtores |
+| `blocosinicializacao` | Blocos de inicialização |
+| `modificadoresestaticos` | Modificador `static` |
+| `modificadorfinal` | Modificador `final` |
+| `associacao` | Associação entre classes |
+| `heranca` | Herança |
+| `sobrescrita` | Sobrescrita de métodos |
+| `classesabstratas` | Classes abstratas |
+| `interfaces` | Interfaces |
+| `enumeracao` | Enumerações |
+| `polimorfismo` | Polimorfismo, `instanceof` e programação orientada a interface (padrão `Repositorio`) |
+
+### 3. Exceções — `excecoes`
+
+| Pacote | Assunto |
+| --- | --- |
+| `error` | `Error` e `StackOverflowError` |
+| `runtime` | Exceções *unchecked*, `IllegalArgumentException`, `finally`, ordem dos `catch` e *multi-catch* |
+| `exception` | Exceções *checked*: `try/catch`, `throws`, relançamento e encapsulamento, `try-with-resources` (`Closeable`), exceção customizada (`LoginInvalidoException`) e regras na sobrescrita de métodos |
+
+### 4. Classes utilitárias — `classesutilitarias` *(em andamento)*
+
+| Pacote | Assunto |
+| --- | --- |
+| `wrappers` | Classes *Wrapper* (`Integer`, `Double`, `Character`, `Boolean`…), *autoboxing*, *unboxing* e métodos utilitários como `parseInt`, `parseBoolean` e `Character.isDigit` |
+
+## Estrutura do projeto
 
 ```text
 src/
 ├── HelloWorld.java
 └── academy/maratonajava/
-    ├── introducao/                  # fundamentos da linguagem
-    └── poo/
-        ├── introducaoaclasses/      # domain/ e test/
-        ├── metodos/                 # domain/ e test/
-        ├── sobrecargametodos/       # domain/ e test/
-        ├── construtores/            # domain/ e test/
-        ├── blocosinicializacao/     # domain/ e test/
-        ├── modificadoresestaticos/  # domain/ e test/
-        ├── modificadorfinal/        # domain/ e test/
-        ├── associacao/              # domain/ e test/
-        ├── heranca/                 # domain/ e test/
-        ├── sobrescrita/             # domain/ e test/
-        ├── classesabstratas/        # domain/ e test/
-        ├── interfaces/              # domain/ e test/
-        ├── Enumeracao/              # domain/ e test/
-        └── polimorfismo/            # domain/, repositorio/, servico/ e test/
+    ├── fundamentos/
+    │   ├── tiposprimitivos/
+    │   ├── operadores/
+    │   ├── estruturascondicionais/
+    │   ├── estruturasrepeticao/
+    │   └── arrays/
+    ├── poo/
+    │   ├── <assunto>/
+    │   │   ├── domain/
+    │   │   └── test/
+    │   └── polimorfismo/
+    │       ├── domain/
+    │       ├── repositorio/
+    │       ├── servico/
+    │       └── test/
+    ├── excecoes/
+    │   ├── error/test/
+    │   ├── runtime/test/
+    │   └── exception/
+    │       ├── domain/
+    │       └── test/
+    └── classesutilitarias/
+        └── wrappers/test/
 ```
 
-## Assuntos já estudados
+## Convenções
 
-### Fundamentos
-
-- Tipos primitivos e casting
-- Operadores
-- Estruturas condicionais
-- Estruturas de repetição
-- Arrays e arrays multidimensionais
-- Exercícios de tipos primitivos
-
-### Programação Orientada a Objetos
-
-- Introdução a classes e objetos
-- Métodos
-- Sobrecarga de métodos
-- Construtores
-- Blocos de inicialização
-- Modificadores estáticos (`static`)
-- Modificador `final`
-- Associação entre classes
-- Herança
-- Sobrescrita de métodos
-- Classes abstratas
-- Interfaces
-- Enumerações
-- Polimorfismo (parâmetros polimórficos, `instanceof` e programação orientada a interface)
+- **Pacotes** em minúsculas, sem acento, seguindo a convenção do Java; **classes** em `PascalCase`.
+- `fundamentos/`: exemplos soltos com `main`, agrupados por assunto e numerados (`Arrays01`, `Arrays02`…).
+- `poo/<assunto>/domain/`: classes do assunto estudado (entidades, interfaces, exceções customizadas).
+- `poo/<assunto>/test/`: classes com `main` que exercitam o assunto. É por elas que se executa o código.
+- `poo/polimorfismo/` tem ainda `repositorio/` (interface) e `servico/` (implementações e regras de negócio).
+- Arquivos de I/O gerados nos testes (`*.txt`, `*arquivo/`) são ignorados pelo `.gitignore`.
+- Commits seguem o padrão *Conventional Commits* em português (`feat:`, `refactor:`, `docs:`, `chore:`).
 
 ## Como executar
 
-1. Clone o repositório.
-2. Abra o projeto no IntelliJ IDEA.
-3. Configure um JDK 8, caso necessário.
-4. Execute uma das classes que possuem o método `main`, como `Arrays01`, `CarroTest01` ou `CalculadoraTest03`.
+```bash
+git clone https://github.com/GGusm4o/maratona-java.git
+```
 
-## Organização dos pacotes
+1. Abra a pasta no IntelliJ IDEA.
+2. Configure um JDK 8 (*File → Project Structure → SDK*).
+3. Marque `src` como *Sources Root*, se necessário.
+4. Execute qualquer classe com `main`, por exemplo:
+   - `academy.maratonajava.fundamentos.arrays.Arrays01`
+   - `academy.maratonajava.poo.polimorfismo.test.RepositorioTest01`
+   - `academy.maratonajava.excecoes.exception.test.TryWithResourcesTest01`
+   - `academy.maratonajava.classesutilitarias.wrappers.test.WrappersTest01`
 
-- `fundamentos`: exemplos dos fundamentos da linguagem.
-- `academy.maratonajava.poo.*`: um pacote por assunto de orientação a objetos. Em geral, `domain` contém as classes do assunto e `test` contém as classes com `main` que as exercitam.
-- `academy.maratonajava.poo.polimorfismo`: além de `domain` e `test`, possui `repositorio` (interface) e `servico` (implementações e regras de negócio).
+Pela linha de comando:
 
-## Progresso dos estudos
+```bash
+javac -d out $(find src -name "*.java")
+java -cp out academy.maratonajava.classesutilitarias.wrappers.test.WrappersTest01
+```
 
-- [x] Fundamentos da linguagem
-- [x] Estruturas condicionais e de repetição
-- [x] Arrays e arrays multidimensionais
-- [x] Introdução a classes e objetos
-- [x] Métodos e sobrecarga
-- [x] Construtores e blocos de inicialização
-- [x] Modificadores `static` e `final`
-- [x] Associação
-- [x] Herança e sobrescrita
-- [x] Classes abstratas e interfaces
-- [x] Enumerações
-- [x] Polimorfismo
-- [ ] Exceções (em andamento)
+## Progresso
 
-## Observação
+- [x] Fundamentos
+- [x] POO
+- [x] Exceções
+- [ ] Classes utilitárias (*Wrappers* em andamento)
 
-Este projeto é voltado para aprendizado e prática. Os exemplos refletem os assuntos estudados ao longo da evolução em Java.
+---
+
+Projeto voltado para aprendizado e prática; os exemplos refletem os assuntos estudados em cada etapa.
